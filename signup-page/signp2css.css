@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(227, 153, 14);
+}
+
+.credentials {
+    position: relative;
+    width: 350px;
+    height: 700px;
+    top: 40px;
+    border: 1px solid green;
+    padding: 50px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 25px;
+    border: 1px solid rgb(218, 140, 14);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.logo img {
+    width: 200px;
+    height: 150px;
+}
+
+.logo {
+    text-align: center;
+}
+
+.credentials label {
+    display: block;
+    color: black;
+    font-size: medium;
+
+}
+
+.credentials input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    border: 1px solid rgb(218, 140, 14);
+    border-radius: 8px;
+    opacity: 0.8;
+    color: rgb(122, 123, 123);
+
+}
+
+.credentials label {
+    color: rgb(40, 39, 39);
+    font-size: medium;
+}
+
+button.login {
+    top: 100px;
+    display: block;
+    width: 106%;
+    padding: 10px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(212, 127, 8);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    opacity: 0.85;
+}
+
+button.login:hover {
+    opacity: 1;
+}
