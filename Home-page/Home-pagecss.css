@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 143, 57, 0.148);
+}
+
+.Navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    padding: 10px;
+    background-color: rgb(236, 158, 32);
+}
+
+.nav-bar-contents {
+    position: fixed;
+    left: 300px;
+    padding: 10px;
+}
+
+.logotext {
+    position: fixed;
+    left: 20px;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+button.profile {
+    position: fixed;
+    right: 20px;
+    top: 10px;
+    padding: 10px;
+    border-width: 0cap;
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.search {
+    align-content: center;
+    align-self: center;
+}
+
+.image img {
+    position: fixed;
+    top: 150px;
+    width: 200px;
+    height: 200px;
+    left: 150px;
+}
+
+.orderfood {
+    position: fixed;
+    top: 150px;
+    left: 400px;
+    font-size: 60px;
+}
+
+.search-bar {
+    position: fixed;
+    top: 330px;
+    left: 400px
+}
+
+.search-bar input {
+    width: 200%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border: 1px solid rgb(218, 140, 14);
+    border-radius: 8px;
+}
