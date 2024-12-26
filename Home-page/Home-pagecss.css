@@ -18,6 +18,7 @@ body {
     height: 50px;
     padding: 10px;
     background-color: rgb(236, 158, 32);
+    z-index: 2;
 }
 
 .nav-bar-contents {
@@ -49,7 +50,7 @@ button.profile {
     align-content: center;
     align-self: center;
     position: relative;
-    top: 1px;
+    top: 5Spx;
 }
 
 .image img {
@@ -62,7 +63,7 @@ button.profile {
 
 .orderfood {
     position: relative;
-    top: 20px;
+    top: 10px;
     left: 400px;
     font-size: 60px;
 }
@@ -82,15 +83,18 @@ button.profile {
     border-radius: 8px;
 }
 
-.category {
+/*.category {
+    display: grid;
     align-content: center;
     align-self: center;
     position: relative;
-    top: 500px;
+    
 
-}
+}*/
 
 .cat {
+    display: grid;
+    top: 700px;
     align-items: center;
     position: relative;
     padding: 20px;
@@ -111,3 +115,49 @@ button.profile {
 .cat:hover {
     background-color: orange;
 }
+.feature
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 buttons per row */
+    gap: 20px; /* Adds space between buttons */
+    justify-content: center; /* Centers the grid in the container */
+    align-content: center;
+    align-self: center;
+    position: relative;
+    top: 1000px;
+    align-items: center;
+}
+
+.F{
+    align-items: center;
+    position: relative;
+    padding: auto;
+    right: 10px;
+    display: inline-table;
+    width: 150px;
+    height: 150px;
+    margin-left: 30px;
+    align-items: center;
+    right: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 20%;
+    border-color: orange;
+    font-size: 1.rem;
+    align-content: center;
+}
+
+.F:hover {
+    background-color: orange;
+}
+.image1 img
+{
+    position: relative;
+    top: 350px;
+    left: 500px;
+    width: 400px;
+}
+
+
