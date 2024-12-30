@@ -138,7 +138,7 @@ button.profile {
     height: 150px;
     margin-left: 30px;
     align-items: center;
-    right: 100px;
+    right: 50px;
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: transparent;
@@ -160,4 +160,14 @@ button.profile {
     width: 400px;
 }
 
+.image2 img
+{
+    position: relative;
+    top: 1000px;
+    right: 1100px;
+    width: 400px;
+    border-radius: 15%;
+    height: 350px;
+    opacity: 0.9;
+}
 
