@@ -40,11 +40,77 @@ button.profile {
     top: 10px;
     padding: 10px;
     border-width: 0cap;
-    background:url(profile3.jpg);
+    background: url(profile3.jpg);
     background-size: 50px 50px;
     background-color: white;
     cursor: pointer;
     border-radius: 50%;
     width: 50px;
     height: 50px;
+}
+
+.profile-window {
+    height: 400px;
+    width: 300px;
+    background-color: white;
+    position: fixed;
+    top: 80px;
+    right: 10px;
+    align-items: center;
+    text-align: center;
+    border-radius: 10%;
+    padding-top: 10px;
+    border-color: orange;
+
+}
+
+.profile-pic img {
+    height: 80px;
+    width: 80px;
+    position: fixed;
+    margin-top: 30px;
+    align-self: center;
+    right: 115px;
+}
+
+.l1 {
+    margin-top: 190px;
+}
+
+.user-name {
+    position: fixed;
+    top: 250px;
+    right: 110px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.items {
+    display: grid;
+    position: relative;
+    width: 180%;
+    height: 200px;
+    left: 10x;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: white;
+    top: 300px;
+    border-radius: 5%;
+}
+
+.search-bar {
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+.search-bar input {
+    width: 600%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border: 1px solid rgb(218, 140, 14);
+    border-radius: 8px;
 }
