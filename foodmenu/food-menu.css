@@ -7,31 +7,46 @@
 body {
     display: flex;
     align-items: center;
-    background-color: rgba(255, 143, 57, 0.148);
+    background-color: rgba(227, 158, 30, 0.942);
 }
 
 .Navbar {
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
-    height: 50px;
-    padding: 10px;
-    background-color: rgb(236, 158, 32);
     z-index: 2;
+    width: 100%;
+    padding: 20px 20px;
+    background-color: rgb(212, 127, 8);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
-.nav-bar-contents {
-    position: fixed;
-    left: 300px;
-    padding: 10px;
+.Nav-contents {
+    position: relative;
+    display: flex;
+    gap: 30px;
+    right: 300px;
 }
+
+.Nav-contents a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.Nav-contents a:hover {
+    color: black;
+}
+
 
 .logotext {
-    position: relative;
-    left: 20px;
     font-size: xx-large;
     font-weight: bolder;
+    margin-left: 20px;
 }
 
 button.profile {
@@ -40,77 +55,120 @@ button.profile {
     top: 10px;
     padding: 10px;
     border-width: 0cap;
-    background: url(profile3.jpg);
-    background-size: 50px 50px;
     background-color: white;
-    cursor: pointer;
+    background: url(profile3.jpg) center;
+    background-size: cover;
     border-radius: 50%;
     width: 50px;
     height: 50px;
+    cursor: pointer;
 }
 
 .profile-window {
     height: 400px;
     width: 300px;
     background-color: white;
-    position: fixed;
+    position: absolute;
     top: 80px;
     right: 10px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
-    border-radius: 10%;
-    padding-top: 10px;
-    border-color: orange;
-
+    border-radius: 10px;
+    border: 1px solid orange;
+    z-index: 10;
+    padding: 10px;
 }
 
 .profile-pic img {
     height: 80px;
     width: 80px;
-    position: fixed;
-    margin-top: 30px;
-    align-self: center;
-    right: 115px;
+    border-radius: 50%;
+    margin-top: 20px;
 }
 
 .l1 {
-    margin-top: 190px;
+    width: 80%;
+    margin: 20px;
 }
 
 .user-name {
-    position: fixed;
-    top: 250px;
-    right: 110px;
+    margin: 20px;
 }
 
 .hidden {
     visibility: hidden;
 }
 
-.items {
-    display: grid;
+.food-menu {
     position: relative;
-    width: 180%;
-    height: 200px;
-    left: 10x;
-    margin-right: 10px;
-    margin-left: 10px;
+    padding: 20px;
+    padding-top: 60px;
+    margin-top: 50px;
+    justify-content: left;
+}
+
+.food-menu .North {
+    display: flex;
+    text-align: center;
     background-color: white;
-    top: 300px;
-    border-radius: 5%;
-}
-
-.search-bar {
-    position: relative;
-    top: 100px;
-    left: 100px;
-}
-
-.search-bar input {
-    width: 600%;
-    padding: 10px;
-    margin-bottom: 20px;
-    font-size: 1rem;
+    border-radius: 25px;
+    height: 300px;
+    width: 1420px;
+    padding: 30px;
     border: 1px solid rgb(218, 140, 14);
-    border-radius: 8px;
+    margin-top: 50px;
+    margin: 20px auto;
+    margin-bottom: 100px;
+
+}
+
+.food-menu .North img {
+    width: 450px;
+    height: 300px;
+    text-align: left;
+    border-radius: 20px;
+}
+
+.food-menu .North h3 {
+    text-align: center;
+    margin-left: 100px;
+    padding: 20px;
+    margin-bottom: 50px;
+    font-size: 4rem;
+    color: rgb(212, 127, 8);
+    ;
+}
+
+.items {
+    position: relative;
+    display: grid;
+    grid-template-rows: repeat(1, 5fr);
+}
+
+.dish {
+    display: flex;
+    background-color: white;
+    border-radius: 25px;
+    width: 1380px;
+    height: 200px;
+    padding: 50px;
+    border: 1px solid rgb(218, 140, 14);
+    text-align: center;
+    margin: 20 auto;
+    margin-top: 10px;
+}
+
+.dish img {
+    width: 200px;
+    height: 200px;
+}
+
+.dish h2 {
+    margin-left: 50px;
+}
+
+.dish p {
+    margin-left: 50px;
 }
