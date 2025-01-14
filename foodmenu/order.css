@@ -42,11 +42,11 @@ body {
     color: black;
 }
 
-
 .logotext {
+    position: relative;
+    left: 20px;
     font-size: xx-large;
     font-weight: bolder;
-    margin-left: 20px;
 }
 
 button.profile {
@@ -179,19 +179,19 @@ button.profile {
 .items {
     position: relative;
     display: grid;
-    grid-template-rows: repeat(1, 5fr);
+    grid-template-columns: repeat(2, 5fr);
 }
 
 .dish {
     display: flex;
     background-color: white;
     border-radius: 25px;
-    width: 1380px;
+    width: 600px;
     height: 200px;
     padding: 50px;
     border: 1px solid rgb(218, 140, 14);
     text-align: center;
-    margin: 20 auto;
+    margin: 10 auto;
     margin-top: 10px;
 }
 
@@ -208,4 +208,7 @@ button.profile {
     margin-left: 50px;
 }
 
-.dish:hover {}
+.dish:hover {
+    background-color: rgb(218, 140, 14);
+    cursor: pointer;
+}
