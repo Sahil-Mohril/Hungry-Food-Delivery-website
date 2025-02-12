@@ -6,7 +6,9 @@
 
 body {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: rgba(227, 158, 30, 0.942);
 }
 
@@ -104,6 +106,8 @@ button.profile {
 
 .food-menu {
     position: relative;
+    display: flex;
+    flex-direction: column;
     padding: 20px;
     padding-top: 60px;
     margin-top: 50px;
@@ -252,110 +256,27 @@ button.profile {
     cursor: pointer;
 }
 
-/*.food-menu .Statusbox {
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-    background-color: white;
-    border-radius: 25px;
-    height: 300px;
-    width: 1420px;
-    padding: 30px;
-    border: 1px solid rgb(218, 140, 14);
-    margin-top: 30px;
-    margin: 20px auto;
-    margin-bottom: 50px;
-
-}
-
-.food-menu .Statusbox img {
-    width: 450px;
-    height: 300px;
-    text-align: left;
-    border-radius: 20px;
-}
-
-.food-menu .Statusbox h1 {
-    text-align: left;
-    margin-left: 20px;
-    padding: 10px;
-    margin-bottom: 50px;
-    font-size: 1.8rem;
-    color: rgb(100, 100, 100);
-}
-
-.Statusbox .Restraunt {
-    display: flex;
-    flex: 1;
+.Statusbox {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     flex-direction: column;
-    gap: 10px;
-    margin-top: 60px;
-    margin-left: 20px;
-    padding: 10px;
-    margin-bottom: 50px;
-    font-size: 1.5rem;
-    color: rgb(100, 100, 100);
-}
-
-.Statusbox .date {
-    margin-top: 70px;
-    font-size: 1.3rem;
-    color: rgb(100, 100, 100);
-
-}
-
-.Statusbox .time {
-    margin-top: 70px;
-    margin-left: 20px;
-    font-size: 1.3rem;
-    color: rgb(100, 100, 100);
-}
-
-.Statusbox .members {
-    position: relative;
-    margin-left: 30px;
-    margin-top: 70px;
-    font-size: 1.3rem;
-    color: rgb(100, 100, 100);
-}
-
-.Restraunt .address img {
-    width: 30px;
-    height: 30px;
-    vertical-align: text-bottom;
-    padding-right: 10px;
-}
-
-.Restraunt .address {
-    margin-top: 20px;
-    margin-left: 1px;
-    padding: 5px;
-    font-size: 1.2rem;
-    color: rgb(100, 100, 100);
-}
-
-.Restraunt .Order {
-    margin-top: 30px;
-    margin-left: 20px;
-}*/
-
-
-
-.food-menu .Statusbox {
-    position: relative;
-    display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: white;
     border-radius: 25px;
-    padding: 30px;
+    padding: 10px;
     border: 1px solid rgb(218, 140, 14);
-    margin: 30px;
-    margin-left: 10px;
+    margin: 20px;
+    margin-bottom: 0px;
     width: 90%;
-    gap: 20px;
+    height: 300px;
+    gap: 10px;
+    align-self: center;
 }
+
+
 
 .food-menu .Statusbox img {
     width: 300px;
@@ -435,6 +356,7 @@ button.profile {
     border-radius: 8px;
     cursor: pointer;
     width: 100px;
+
 }
 
 .Month {
@@ -444,9 +366,9 @@ button.profile {
     justify-content: center;
     align-items: center;
     gap: 5px;
-    margin: 100px;
+    margin: 30px;
     margin-top: 100px;
-    margin-left: 5px;
+    margin-left: 20px;
 }
 
 .Day {
@@ -489,6 +411,11 @@ button.profile {
 }
 
 .Calendar {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     grid-column: span 8;
     background-color: white;
     border-radius: 25px;
@@ -501,4 +428,143 @@ button.profile {
     text-align: center;
     font-size: 2.5rem;
     color: rgb(100, 100, 100);
+
+}
+
+.currentMonth {
+    margin-right: 10px;
+}
+
+.Next {
+    position: absolute;
+    right: 0;
+    height: 50px;
+    width: 40px;
+    top: 0;
+    bottom: 0;
+    /* border: 1px solid rgb(212, 127, 8); */
+    border-radius: 25px;
+    padding: 20px;
+    margin: 10px;
+    margin-bottom: 10px;
+
+
+}
+
+.Prev {
+    position: absolute;
+    left: 0;
+    height: 50px;
+    width: 40px;
+    top: 0;
+    bottom: 0;
+    /* border: 1px solid rgb(212, 127, 8); */
+    border-radius: 25px;
+    padding: 20px;
+    margin: 10px;
+    margin-bottom: 10px;
+
+}
+
+.Prev:hover,
+.Next:hover {
+    background-color: rgb(218, 140, 14);
+    cursor: pointer;
+}
+
+.meal-info {
+    background-color: white;
+    border-radius: 25px;
+    width: 160px;
+    margin-left: 10px;
+    height: 200px;
+    padding: 30px;
+    border: 1px solid rgb(218, 140, 14);
+    text-align: center;
+    gap: 5px;
+}
+
+.today {
+    width: 230px;
+    border: none;
+    text-align: center;
+    gap: 5px;
+    padding: 30px;
+}
+
+
+
+.today h3 {
+    font-size: 2rem;
+    color: rgb(212, 127, 8);
+
+}
+
+.today p {
+    margin-top: 20px;
+    font-size: 2rem;
+    color: rgb(212, 127, 8);
+
+}
+
+.Week-menu {
+    display: flexbox;
+    flex-direction: column;
+    grid-column: span 8;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid rgb(218, 140, 14);
+    border-radius: 25px;
+    text-align: center;
+    margin-left: 160px;
+    height: 250px;
+
+}
+
+.Date:hover {
+    background-color: rgb(218, 140, 14);
+    cursor: pointer;
+}
+
+.show {
+    display: none;
+}
+
+
+.meal-info .Meal1 {
+    font-size: 1.5rem;
+    padding: 10px;
+    color: rgb(212, 127, 8);
+}
+
+.meal-info .address {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+}
+
+.meal-info .mealtime {
+    font-size: 1rem;
+}
+
+.meal-info:hover {
+    background-color: rgb(218, 140, 14);
+    cursor: pointer;
+}
+
+.meal-info:hover>.Meal1 {
+    color: black;
+}
+
+
+.Week-menu .today p {
+    margin-top: 40px;
+    font-size: 1.8rem;
+    color: rgb(212, 127, 8);
+
+}
+
+.Week-menu .add {
+    border: 1px solid black;
+    width: 50px;
 }
