@@ -24,12 +24,12 @@ const weekmenu = document.querySelectorAll('.Week-menu');
 //     })
 // })
 week = ['Week1', 'Week2', 'Week3', 'Week4', 'Week5'];
-console.log(weekmenu)
+//console.log(weekmenu)
 //weekmenu[1].classList.remove('show');
 dates.forEach(function (select) {
     select.addEventListener('click', function () {
         if (select.textContent != "") {
-            //console.log(select);
+            //console.log(select.classList);
             select.textContent == "" ? console.log("no date") : console.log(select.textContent + " is on");
             //console.log(select.classList);
             let weekno = week.indexOf(select.classList[3]);
@@ -38,6 +38,16 @@ dates.forEach(function (select) {
                 if (i != weekno)
                     weekmenu[i].classList.add('show');
             }
+            selecteddate = document.querySelectorAll('.selecteddate');
+            //console.log(selecteddate)
+            selecteddate[weekno].textContent = select.firstChild.nodeValue.trim() + "th " + currentMonth.textContent;
+
+            selectedyear = document.querySelectorAll('.selectedyear');
+            //console.log(selecteddate)
+            selectedyear[weekno].textContent = yr.textContent
+
+            //console.log(select.firstChild.nodeValue.trim())
+
 
         }
 
@@ -59,7 +69,7 @@ function nextmonth() {
     year = yr.textContent;
     if (monthIndex >= month.length) {
         monthIndex = 0;
-        console.log('here');
+        //console.log('here');
         year = yr.textContent++;
     }
     currentMonth.textContent = month[monthIndex];
@@ -106,20 +116,6 @@ nextbutton.addEventListener('click', nextmonth);
 prevbutton.addEventListener('click', prevmonth);
 
 
-// let date = new Date(2025, 0, 1);
-// console.log(date);
-// console.log(date.getDay());
 
-// dates = document.querySelectorAll('.Date');
-//console.log(dates[3]);
-//dates[8].textContent = "First Day"
-// let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-// year = yr.textContent;
-// let firstdate = new Date(year, monthIndex, 1);
-// console.log(days[firstdate.getDay()]);
-// //console.log(dates[3].textContent);
 
-//dates.forEach(date => date.textContent = "");
-
-//let firstdate = new Date(year, monthIndex, 1);
 
